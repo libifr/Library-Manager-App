@@ -1,18 +1,20 @@
 {
-    "name": "express-HelloWorld",
-    "description": "Hello World ExpressJS WebService",
-    "version": "0.0.1",
+    "name": "library-manager",
+    "version": "1.0.0",
     "private": true,
-    "dependencies": {
-        "express": "4.16.2"
-    },
-    "devDependencies": {
-        "mocha": "5.0.0",
-        "unit.js": "2.0.0",
-        "supertest": "3.0.0"
-    },
     "scripts": {
-        "start": "node server.js",
-        "test": "mocha --recursive tests --exit"
+        "start": "node server.js"
+    },
+    "dependencies": {
+        "aws-sdk": "^2.1435.0",
+        "connect-form": "^0.2.1",
+        "cookie-parser": "~1.4.4",
+        "debug": "~2.6.9",
+        "ejs": "~2.6.1",
+        "express": "~4.16.1",
+        "express-fileupload": "^1.4.0",
+        "http-errors": "~1.6.3",
+        "morgan": "~1.9.1",
+        "uuid": "^9.0.0"
     }
 }

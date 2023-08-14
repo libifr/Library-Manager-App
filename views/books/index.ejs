@@ -1,0 +1,29 @@
+<% include ../fragments/header.ejs %>
+<div class="container">
+    <a href="/books/addBook" class="btn btn-primary">To add a Book</a>
+    <div class="content">
+      <ul class="books list-group">
+          <% for (let book of books) { %>
+          <li class="list-group-item">
+              <div class="list-item">
+                  <div class="label-item">Book Name: </div>
+                  <div class="label-value"> <%= book.bookName %></div>
+              </div>
+              <div class="list-item">
+                  <div class="label-item">isbn: </div>
+                  <div class="label-value"> <%= book.isbn %></div>
+              </div>
+              <div class="list-item">
+                  <div class="label-item">Author: </div>
+                  <div class="label-value"> <%= book.author %></div>
+              </div>
+              <div class = book-img>
+              <img src="<%= book.img %>" class="author"  alt="book img" />
+              </div>
+          </li>
+          <% } %>
+
+      </ul>
+    </div>
+</div>
+<% include ../fragments/footer.ejs %>

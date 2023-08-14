@@ -1,0 +1,25 @@
+<% include ../fragments/header.ejs %>
+
+
+<div class="container">
+    <a href="/authors/addAuthor" class="btn btn-primary">To add an Author</a>
+    <div class="content">
+      <ul class="books list-group">
+          <% for (let author of authors) { %>
+          <li class="list-group-item">
+              <div class="list-item">
+                  <div class="label-item">First name:</div>
+                  <div class="label-value"> <%= author.firstName %> </div>
+              </div>
+              <div class="list-item">
+                  <div class="label-item">Last name:</div>
+                  <div class="label-value"> <%= author.lastName %> </div>
+              </div>
+
+          </li>
+          <% } %>
+
+      </ul>
+    </div>
+</div>
+<% include ../fragments/footer.ejs %>
